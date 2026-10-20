@@ -8,4 +8,4 @@ async function search() {}
         document.querySelector("#answer").innerHTML = img_element;
         let shiny_img_element = <img src="${data.sprites.front_shiny}">  <img src="${data.sprites.back_shiny}">;
             document.querySelector("#shiny_answer").innerHTML = shiny_img_element;
-
+BBBBBBBBBBB
