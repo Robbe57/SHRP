@@ -3,8 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <title>$Title$</title>
+  <link rel="stylesheet" href="pokestyle.css">
 </head>
 <body>
-$END$
+<div class="dex_closed" id="dex_closed">
+    <button class="open" id="opendex"> ---> </button>
+</div>
+
+<div class="dex_open" id="dex_open">
+    <p>Who is that Pokémon??</p>
+    <div id="searchbar" class="box small">
+        <input type="text" id="query">
+        <button id="searchbutton">search</button>
+    </div>
+    <div id="answer" class="answer"></div>
+    <div class="shiny" id="shiny_answer"></div>
+    <button> see the shiny?</button>
+    <button class="close" id="closedex"><----</button>
+    </div>
+
+<script src="pokescript.js"></script>
 </body>
 </html>
