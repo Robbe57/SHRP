@@ -1,26 +1,33 @@
 .dex_closed{
     background-image:url("images/pokedex-closed.png");
-    padding:5px ;
+    background-repeat: no-repeat;
     border: 5px red;
     height: 550px;
+    width: 650px;
     display:flex;
-    justify-content: center;
-    align-content: center;
+    justify-items: center;
+    align-items: center;
+
 }
 .dex_open{
     display:none;
     justify-content: center;
     align-content: center;
 background-image: url("images/pokedex-open.png");
-height: 550px}
+height: 550px;
+}
 
 .open{
+
     display:flex;
     justify-content: flex-start;
-    align-content: flex-start;
+    align-content: center;
 }
-.body{
+body{
     background-image: url("images/background.png");
+    background-repeat: no-repeat;
+
+
 
 }
 
