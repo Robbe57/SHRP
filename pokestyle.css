@@ -1,24 +1,36 @@
 .dex_closed{
-    width:620px;
-    height:550px;
-    background-color: cornflowerblue;
+    background-image:url("images/pokedex-closed.png");
     padding:5px ;
     border: 5px red;
+    height: 550px;
+    display:flex;
+    justify-content: center;
+    align-content: center;
 }
 .dex_open{
     display:none;
-    width:1240px;
-height: 550px;
-background-color: cornflowerblue;
-padding: 5px;
-border:5px solid red;}
+    justify-content: center;
+    align-content: center;
+background-image: url("images/pokedex-open.png");
+height: 550px}
 
+.open{
+    display:flex;
+    justify-content: flex-start;
+    align-content: flex-start;
+}
 .body{
-    background-color: cornsilk;
+    background-image: url("images/background.png");
 
 }
 
-.answer{}
+.answer{
+    display:flex;
+    justify-content: center;
+    align-content: center;
+}
 .shiny{
     display: none;
+    justify-content: center;
+    align-content: center;
 }

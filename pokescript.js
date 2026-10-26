@@ -12,9 +12,15 @@ async function search() {
     let img_element = `<img src="${data.sprites.front_default}">`;
     let pokemon_id=(data.id);
     document.querySelector("#answer").innerHTML = img_element;
-    let shiny_img_element = `<img src="${data.sprites.front_shiny}">``  <img src="${data.sprites.back_shiny}">`;
+    document.querySelector("#shiny").addEventListener('click',function(){
+        document.querySelector("#shiny_answer").style.display='flex';
+        document.querySelector("#answer").style.display='none';    });
+    document.querySelector("#normal").addEventListener('click',function(){
+        document.querySelector("#shiny_answer").style.display='none';
+        document.querySelector("#answer").style.display='flex';    });
+    let shiny_img_element = `<img src="${data.sprites.front_shiny}">`;
     document.querySelector("#shiny_answer").innerHTML = shiny_img_element;
-    }
+       }
 document.querySelector("#searchbutton").addEventListener('click', search);
 
 
