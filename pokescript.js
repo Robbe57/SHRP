@@ -1,9 +1,9 @@
 document.querySelector("#opendex").addEventListener('click',function(){
-    document.querySelector("#dex_closed").style.visibility.hidden;
-    document.querySelector("#dex_open").style.display.auto;    });
+    document.querySelector("#dex_closed").style.display ='none';
+    document.querySelector("#dex_open").style.display='block';    });
 document.querySelector("#closedex").addEventListener('click',function(){
-    document.querySelector("#dex_closed").style.display.auto;
-    document.querySelector("#dex_open").style.visibility.hidden;    });
+    document.querySelector("#dex_closed").style.display='block';
+    document.querySelector("#dex_open").style.display='none';    });
 async function search() {
     let pokemon = document.querySelector("#query").value;
     let response = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon}`);
